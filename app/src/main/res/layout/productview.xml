@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productImg2"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/googleg_standard_color_18" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toEndOf="@id/productImg2">
+
+                <TextView
+                    android:id="@+id/productNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="POCO X3 Pro"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/rupeesTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productNameTxt"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹" />
+
+                <TextView
+                    android:id="@+id/productPriceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productNameTxt"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toEndOf="@+id/rupeesTxt"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="19000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/category_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productNameTxt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toEndOf="@+id/rupeesTxt"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Caategory"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/productDescriptionTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productPriceTxt"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="This smartphone features the Qualcomm Snapdragon 860 for smooth function, 16.94-cm (6.67) FHD+ Display for clear visuals."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/deleteCardView2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/productDescriptionTxt"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Delete"
+                        android:textColor="#B5FF0000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/decrement"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_below="@id/deleteCardView2"
+                    android:src="@drawable/minus_button" />
+
+
+                <TextView
+                    android:id="@+id/Quntiity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/deleteCardView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:text="0"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/increment"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_below="@id/editCardView2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_130sdp"
+                    android:src="@drawable/plus" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/editCardView2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/productDescriptionTxt"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/deleteCardView2"
+                    android:defaultFocusHighlightEnabled="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Edit"
+                        android:textColor="#D24CCF15"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/editImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/deleteImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/editImg" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/rectangle_shape"
+        app:cardCornerRadius="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:id="@+id/temp_R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/testimg" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/TestProductText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Ketch "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/TestdesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TestProductText"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="Ketch Men Navy Blue/Blue Slim Fit Checked Casual Shirt "
+                android:textSize="@dimen/_7sdp" />
+
+
+            <TextView
+                android:id="@+id/TestPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TestdesText"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="35"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_7sdp" />
+
+            <TextView
+                android:id="@+id/TestofferpriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TestdesText"
+                android:layout_alignLeft="@id/TestPriceText"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/strike_through_line"
+                android:fontFamily="@font/inter_semibold"
+                android:text="$45.39"
+                android:textSize="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/OfferText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TestdesText"
+                android:layout_alignLeft="@id/TestofferpriceText"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="15% Off"
+                android:textColor="#F44336"
+                android:textSize="@dimen/_6sdp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EditProduct"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/productDescriptionTxt"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Edit"
+                android:textColor="#D24CCF15"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

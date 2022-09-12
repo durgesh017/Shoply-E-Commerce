@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/ShowImageProduct4"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shoestemp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/TempContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/TempProductText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Bacca Bucci"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/TempProductDes"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempProductText"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="2"
+                android:text="Men Grey Mesh High-Top Training or Gym Shoes"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <TextView
+                android:id="@+id/Rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempProductDes"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="₹"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/TempPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempProductDes"
+                android:layout_alignParentLeft="@+id/Rupee"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="1199"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/Rupee2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempProductDes"
+                android:layout_alignParentLeft="@+id/TempPriceText"
+                android:layout_marginLeft="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/strike_through_line"
+                android:fontFamily="@font/inter_semibold"
+                android:text="₹"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/TempLessPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempProductDes"
+                android:layout_alignParentLeft="@+id/TempPriceText"
+                android:layout_marginLeft="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/strike_through_line"
+                android:fontFamily="@font/inter_semibold"
+                android:text="1799"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <TextView
+                android:id="@+id/TempOfferText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TempProductDes"
+                android:layout_alignParentLeft="@+id/TempLessPrice"
+                android:layout_marginLeft="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="15% Off"
+                android:textColor="#F44336"
+                android:textSize="@dimen/_8sdp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/increment"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/TempContent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_90sdp"
+            android:src="@drawable/incre" />
+
+        <TextView
+            android:id="@+id/Quntiity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TempContent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_120sdp"
+            android:text="1"
+            android:textColor="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/decrement"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/TempContent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_140sdp"
+            android:src="@drawable/decre" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
