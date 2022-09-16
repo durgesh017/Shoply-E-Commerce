@@ -7,6 +7,10 @@ class DBCartShowData(
     val price: String,
     val category: String,
     val cid: String,
-    val qu: String
+    val qu: String,
+    val lessprice: String,
+    val offer: String,
+    val rate: String,
+    val review: String,
 ) {
 }

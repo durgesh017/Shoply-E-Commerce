@@ -1,5 +1,6 @@
 package com.example.admin_s.User.User.Controller
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.admin_s.R
+import com.example.admin_s.User.User.ViewProductActivity
 import com.example.admin_s.Utills.DBCartData
 import com.example.admin_s.Utills.DBShowData
 import com.google.firebase.auth.FirebaseAuth
@@ -35,9 +37,20 @@ class HomeShowAdapter(val activity: FragmentActivity?, val list: ArrayList<DBSho
         holder.offer.setText(list.get(position).offer)
 
         holder.Add.setOnClickListener {
-            //AddToCart(position)
-            Add(position)
+            var intent = Intent(activity, ViewProductActivity::class.java)
+            intent.putExtra("n1", list[position].productname)
+            intent.putExtra("n2", list[position].description)
+            intent.putExtra("n3", list[position].price)
+            intent.putExtra("n4", list[position].image)
+            intent.putExtra("n5", list[position].lessprice)
+            intent.putExtra("n6", list[position].rate)
+            intent.putExtra("n7", list[position].review)
+            intent.putExtra("n8", list[position].offer)
+            intent.putExtra("n9", list[position].cid)
+            intent.putExtra("n10", list[position].category)
 
+            intent.putExtra("n11", position)
+            activity.startActivity(intent)
         }
     }
 
@@ -52,8 +65,9 @@ class HomeShowAdapter(val activity: FragmentActivity?, val list: ArrayList<DBSho
         var price = itemView.findViewById<TextView>(R.id.TempPriceText2)
         var img = itemView.findViewById<ImageView>(R.id.ShowImageProduct2)
         var lessprice = itemView.findViewById<TextView>(R.id.TempLessPrice2)
-       /* var rate = itemView.findViewById<TextView>(R.id.TempRateText2)
-        var review = itemView.findViewById<TextView>(R.id.TempReviewText2)*/
+
+        /* var rate = itemView.findViewById<TextView>(R.id.TempRateText2)
+         var review = itemView.findViewById<TextView>(R.id.TempReviewText2)*/
         var offer = itemView.findViewById<TextView>(R.id.TempOfferText2)
         var Add = itemView.findViewById<CardView>(R.id.Add)
 
@@ -117,7 +131,7 @@ class HomeShowAdapter(val activity: FragmentActivity?, val list: ArrayList<DBSho
             list.get(position).rate,
             list.get(position).review,
 
-        )
+            )
 
 
 
@@ -125,4 +139,6 @@ class HomeShowAdapter(val activity: FragmentActivity?, val list: ArrayList<DBSho
 
 
     }
+
+
 }

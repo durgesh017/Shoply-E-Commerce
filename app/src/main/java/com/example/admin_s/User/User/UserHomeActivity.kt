@@ -9,6 +9,7 @@ import com.example.admin_s.R
 import com.example.admin_s.User.User.Fragment.AccountFragment
 import com.example.admin_s.User.User.Fragment.CategoryFragment
 import com.example.admin_s.User.User.Fragment.HomeFragment
+import com.example.admin_s.User.User.Fragment.WishlistFragment
 import com.example.admin_s.databinding.ActivityUserHomeBinding
 
 class UserHomeActivity : AppCompatActivity() {
@@ -23,13 +24,14 @@ class UserHomeActivity : AppCompatActivity() {
         val homeFragment = HomeFragment()
         val categoryFragment = CategoryFragment()
         val accountFragment = AccountFragment()
+        val wishlistfragment = WishlistFragment()
 
         binding.bottomNavigation.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.HomeBottom -> loadfragment(homeFragment)
                 R.id.CategoryBottom -> loadfragment(categoryFragment)
                 R.id.UserBottom -> loadfragment(accountFragment)
-                R.id.SearchBottom -> AddActivity(SearchActivity())
+                R.id.SearchBottom -> loadfragment(wishlistfragment)
                 R.id.CartBottom -> AddActivity(CartActivity())
 
             }

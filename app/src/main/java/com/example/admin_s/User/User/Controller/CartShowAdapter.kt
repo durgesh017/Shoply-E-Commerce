@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -77,8 +78,8 @@ class CartShowAdapter(val cartActivity: CartActivity, val list: ArrayList<DBCart
         var price = itemView.findViewById<TextView>(R.id.TempPriceText)
         var img = itemView.findViewById<ImageView>(R.id.ShowImageProduct4)
         var lessprice = itemView.findViewById<TextView>(R.id.TempLessPrice)
-        var increment = itemView.findViewById<ImageView>(R.id.increment)
-        var decrement = itemView.findViewById<ImageView>(R.id.decrement)
+        var increment = itemView.findViewById<RelativeLayout>(R.id.increment)
+        var decrement = itemView.findViewById<RelativeLayout>(R.id.decrement)
         var Quntiity = itemView.findViewById<TextView>(R.id.Quntiity)
         var offer = itemView.findViewById<TextView>(R.id.TempOfferText)
 
@@ -101,7 +102,11 @@ class CartShowAdapter(val cartActivity: CartActivity, val list: ArrayList<DBCart
             list.get(position).price,
             list.get(position).category,
             list.get(position).cid,
-            qu.toString()
+            qu.toString(),
+            list.get(position).lessprice,
+            list.get(position).offer,
+            list.get(position).rate,
+            list.get(position).review,
 
         )
 

@@ -67,12 +67,11 @@ dependencies {
     implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
 
     // Razorpay
-   /* implementation 'com.razorpay:checkout:1.6.4'*/
+    implementation 'com.razorpay:checkout:1.6.24'
 
-
-
-
-
+    //Lottie Animation
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 
 
 }

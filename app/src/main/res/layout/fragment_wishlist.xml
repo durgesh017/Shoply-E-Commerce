@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".User.User.Fragment.CategoryFragment">
+    tools:context=".User.User.Fragment.WishlistFragment">
+
 
     <androidx.cardview.widget.CardView
         android:id="@id/ActionBar"
@@ -32,7 +33,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="@dimen/_25sdp"
                 android:fontFamily="@font/inter_semibold"
-                android:text="Categories"
+                android:text="Wishlist"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14sdp" />
 
@@ -67,36 +68,4 @@
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
-    <RelativeLayout
-        android:id="@+id/r1"
-        android:layout_width="@dimen/_65sdp"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/ActionBar"
-        android:background="#FFFCFC">
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/CategoryRvView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
-    </RelativeLayout>
-
-    <View
-        android:layout_width="0.1dp"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/ActionBar"
-        android:layout_alignLeft="@+id/r1"
-        android:layout_marginLeft="@dimen/_60sdp"
-        android:background="#ACA9A9" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/CategoryProductRvView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/ActionBar"
-        android:layout_marginLeft="@dimen/_60sdp" />
 </RelativeLayout>

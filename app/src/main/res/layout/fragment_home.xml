@@ -103,82 +103,129 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/Categories" />
 
-    <RelativeLayout
-        android:id="@+id/top_5"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/CategoryRvView"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/CategoryRvView">
 
-        <org.imaginativeworld.whynotimagecarousel.ImageCarousel
-            android:id="@+id/carousel"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_130sdp"
-            app:autoPlay="true"
-            app:autoPlayDelay="3000"
-            app:infiniteCarousel="true"
-            app:showBottomShadow="false"
-            app:showNavigationButtons="false"
-            app:showTopShadow="false" />
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/Clothes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/top_5"
-        android:text="Clothes"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/Sports"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/top_5"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/_180sdp"
-        android:text="Sports"
-        android:visibility="gone" />
+            android:layout_height="match_parent">
 
 
-    <RelativeLayout
-        android:id="@+id/top_6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/top_5"
-        android:layout_marginLeft="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_8sdp">
+            <RelativeLayout
+                android:id="@+id/top_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
 
-        <TextView
-            android:id="@+id/Recommended"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_semibold"
-            android:text="Trending Now"
-            android:textColor="@color/TextCr"
-            android:textSize="@dimen/_14sdp" />
+                <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                    android:id="@+id/carousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    app:autoPlay="true"
+                    app:autoPlayDelay="3000"
+                    app:infiniteCarousel="true"
+                    app:showBottomShadow="false"
+                    app:showNavigationButtons="false"
+                    app:showTopShadow="false" />
+            </RelativeLayout>
 
-        <TextView
-            android:id="@+id/ViewAll2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Recommended"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/inter_semibold"
-            android:text="It's Style Season 😊"
-            android:textAlignment="center"
-            android:textSize="@dimen/_8sdp" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/Clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_5"
+                android:text="Clothes"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_5"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_180sdp"
+                android:text="Sports"
+                android:visibility="gone" />
 
 
+            <RelativeLayout
+                android:id="@+id/top_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_5"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RvView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/top_6"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:visibility="visible" />
+                <TextView
+                    android:id="@+id/Recommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Trending Now"
+                    android:textColor="@color/TextCr"
+                    android:textSize="@dimen/_14sdp" />
 
+                <TextView
+                    android:id="@+id/ViewAll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Recommended"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="It's Style Season 😊"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_8sdp" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RvView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_6"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/top_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RvView"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/Recommended2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Trending Now"
+                    android:textColor="@color/TextCr"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/ViewAll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Recommended2"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="It's Style Season 😊"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_8sdp" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RvView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_7"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

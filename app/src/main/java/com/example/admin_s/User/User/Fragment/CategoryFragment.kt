@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.admin_s.R
@@ -16,7 +17,11 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
+interface BackPressHandler {
+    fun onBackPressed(): Boolean
+}
 class CategoryFragment : Fragment() {
+
 
     companion object {
         lateinit var sbinding: FragmentCategoryBinding
@@ -46,7 +51,7 @@ class CategoryFragment : Fragment() {
     )
 
     var no = arrayOf(
-        1, 2, 3, 4, 5, 6,7
+        1, 2, 3, 4, 5, 6, 7
     )
 
     override fun onCreateView(
@@ -57,8 +62,13 @@ class CategoryFragment : Fragment() {
         sbinding = FragmentCategoryBinding.inflate(layoutInflater)
         ReadData()
 
+
+
+
+
         return sbinding.root
     }
+
 
 
     private fun ReadData() {
@@ -124,13 +134,14 @@ class CategoryFragment : Fragment() {
     ) {
 
 
-        var adapter = CategoryAdapter(activity, image, name,no)
+        var adapter = CategoryAdapter(activity, image, name, no)
         var layoutManager = LinearLayoutManager(activity)
         sbinding.CategoryRvView.layoutManager = layoutManager
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         sbinding.CategoryRvView.adapter = adapter
 
     }
+
 
 
 }

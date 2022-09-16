@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.admin_s">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -16,6 +17,12 @@
         android:theme="@style/Theme.AdminS"
         tools:targetApi="31">
         <activity
+            android:name=".User.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.User.ViewProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".Admin.LoginActivity.AdminLogin"
             android:exported="false" />
         <activity
@@ -29,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".User.User.UserHomeActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Admin.LoginActivity.SplashScreenActivity"
             android:exported="true">
@@ -47,8 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".Admin.ProductActivity.MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
-
 
 </manifest>

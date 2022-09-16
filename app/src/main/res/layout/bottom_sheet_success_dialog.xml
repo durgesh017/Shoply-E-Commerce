@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cornor_radius">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/AnimationView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/success5" />
+
+
+        <TextView
+            android:id="@+id/Added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AnimationView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Address Added \nSuccesfully!"
+            android:textAlignment="center"
+            android:textColor="@color/SkyBluePr"
+            android:textSize="@dimen/_16sdp" />
+
+        <Button
+            android:id="@+id/DoneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Added"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_input2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:text="Done"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

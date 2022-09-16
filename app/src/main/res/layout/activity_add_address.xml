@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.AddAddressActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/BackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:foregroundGravity="center"
+                android:src="@drawable/angle_left_24" />
+
+            <TextView
+                android:id="@+id/HeadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/BackBtn"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Add New Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ActionBar"
+        android:layout_margin="@dimen/_8sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:hint="Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Mobile Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/MobileEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="@font/inter_regular"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Flat No. Street Details">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FlatEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:maxLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField3"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Landmark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LandmarkEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField4"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="State">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/StateEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField5"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="City/District">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/CityEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField6"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Pincode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PincodeEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:fontFamily="@font/inter_regular"
+                android:maxLength="6" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filledTextField7"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Address Type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <RadioGroup
+            android:id="@+id/RGGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Type"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/HomeRGBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/OfficeRGBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Office"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="@dimen/_330sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/RGGroup"
+            android:layout_centerInParent="true"
+            android:background="#D2D2D5" />
+
+
+        <CheckBox
+            android:id="@+id/CheckBoxBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/View"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Use as default address"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/CheckoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CheckBoxBtn"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:background="@drawable/custom_input2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:text="Continue"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

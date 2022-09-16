@@ -6,7 +6,9 @@
         <item name="colorPrimaryVariant">@color/SkyBluePr</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">#3063F3</item>
+
+
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -18,5 +20,10 @@
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textSize">@dimen/_9sdp</item>
 
+    </style>
+
+    <style name="CustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 </resources>

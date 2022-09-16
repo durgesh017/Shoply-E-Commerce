@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.admin_s.Admin.LoginActivity.LoginPage
 import com.example.admin_s.R
 import com.example.admin_s.User.User.Controller.HomeCategoryAdapter
@@ -28,6 +28,11 @@ class HomeFragment : Fragment() {
     private var temp: String? = null
     lateinit var binding: FragmentHomeBinding
     var list = arrayListOf<DBShowData>()
+    var list2 = arrayListOf<DBShowData>()
+    var list3 = arrayListOf<DBShowData>()
+    var list4 = arrayListOf<DBShowData>()
+
+
     var image = arrayOf(
         R.drawable.clothes,
         R.drawable.laptop,
@@ -55,17 +60,10 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
-        ReadData()
+        CategoryFliter(1, 2, 3, 4, 5)
         Categories()
 
-        binding.Clothes.setOnClickListener {
-            Fliter(3)
 
-        }
-        binding.Sports.setOnClickListener {
-            Fliter(1)
-
-        }
 
         binding.SearchBtn.setOnClickListener {
             var intent = Intent(activity, SearchActivity::class.java)
@@ -109,7 +107,6 @@ class HomeFragment : Fragment() {
         )
 
 
-
 // Just image URL
         list.add(
             CarouselItem(
@@ -140,8 +137,6 @@ class HomeFragment : Fragment() {
 
             )
         )
-
-
 
 
 // ...
@@ -196,7 +191,7 @@ class HomeFragment : Fragment() {
 
                 }
 
-                RecyclerViewSetup(list)
+                RecyclerViewSetup(list, binding.RvView)
 
             }
 
@@ -206,7 +201,7 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun Fliter(i: Int) {
+    private fun CategoryFliter(i: Int, i1: Int, i2: Int, i3: Int, i4: Int) {
 
         var firebaseDatabase = FirebaseDatabase.getInstance()
         var ref = firebaseDatabase.reference
@@ -231,6 +226,7 @@ class HomeFragment : Fragment() {
 
 
                     if (i == cid.toInt()) {
+
                         var dbshow =
                             DBShowData(
                                 productname,
@@ -247,12 +243,69 @@ class HomeFragment : Fragment() {
                             )
                         list.add(dbshow)
 
+                    } else if (i1 == cid.toInt()) {
+
+                        var dbshow =
+                            DBShowData(
+                                productname,
+                                description,
+                                image,
+                                price,
+                                key,
+                                category,
+                                cid,
+                                lessprice,
+                                rate,
+                                review,
+                                offer
+                            )
+                        list2.add(dbshow)
+
+                    } else if (i2 == cid.toInt()) {
+
+                        var dbshow =
+                            DBShowData(
+                                productname,
+                                description,
+                                image,
+                                price,
+                                key,
+                                category,
+                                cid,
+                                lessprice,
+                                rate,
+                                review,
+                                offer
+                            )
+                        list3.add(dbshow)
+
+                    } else if (i3 == cid.toInt()) {
+
+                        var dbshow =
+                            DBShowData(
+                                productname,
+                                description,
+                                image,
+                                price,
+                                key,
+                                category,
+                                cid,
+                                lessprice,
+                                rate,
+                                review,
+                                offer
+                            )
+                        list4.add(dbshow)
+
                     }
 
 
                 }
+                RecyclerViewSetup(list, binding.RvView)
+                RecyclerViewSetup(list4, binding.RvView2)
+                /*RecyclerViewSetup(list3, binding.recyclerView3)
+                RecyclerViewSetup(list4, binding.recyclerView4)*/
 
-                RecyclerViewSetup(list)
 
             }
 
@@ -261,6 +314,7 @@ class HomeFragment : Fragment() {
             }
         })
     }
+
 
     private fun Categories() {
 
@@ -274,12 +328,15 @@ class HomeFragment : Fragment() {
     }
 
 
-    private fun RecyclerViewSetup(list: ArrayList<DBShowData>) {
+    private fun RecyclerViewSetup(list: ArrayList<DBShowData>, rvView: RecyclerView) {
         var adapter = HomeShowAdapter(activity, list)
         var layoutManager = LinearLayoutManager(activity)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
-        binding.RvView.layoutManager = layoutManager
-        binding.RvView.adapter = adapter
+
+        rvView.layoutManager = layoutManager
+        rvView.adapter = adapter
+
+
     }
 
 
