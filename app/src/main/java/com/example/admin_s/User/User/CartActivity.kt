@@ -29,10 +29,27 @@ class CartActivity : AppCompatActivity() {
 
     private var minteger: Int = 0
     private var temp: Int = 0
-    var list = arrayListOf<DBCartProduct>()
     var UserAddress = arrayListOf<AddressInsert>()
 
 
+    companion object {
+
+        lateinit var bottomdialog: BottomSheetDialog
+
+        var productname1: String? = null
+        var description1: String? = null
+        var image1: String? = null
+        var price1: String? = null
+        var category1: String? = null
+        var cid1: String? = null
+        var qu1: String? = null
+        var lessprice1: String? = null
+        var offer1: String? = null
+        var rate1: String? = null
+        var review1: String? = null
+        var cartlist = arrayListOf<DBCartProduct>()
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +57,7 @@ class CartActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         ReadData()
-        AddressRead()
+        readAddress()
 
         binding.CheckoutBtn.setOnClickListener {
             Bottom(minteger)
@@ -66,24 +83,24 @@ class CartActivity : AppCompatActivity() {
 
         ref.child("Cart").child(uid.toString()).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                list.clear()
+                cartlist.clear()
                 minteger = 0
                 for (x in snapshot.children) {
-                    var productname = x.child("productname").getValue().toString()
-                    var description = x.child("description").getValue().toString()
-                    var image = x.child("image").getValue().toString()
-                    var price = x.child("price").getValue().toString()
-                    var category = x.child("category").getValue().toString()
-                    var cid = x.child("cid").getValue().toString()
-                    var qu = x.child("qu").getValue().toString()
-                    var lessprice = x.child("lessprice").getValue().toString()
-                    var offer = x.child("offer").getValue().toString()
-                    var rate = x.child("rate").getValue().toString()
-                    var review = x.child("review").getValue().toString()
+                    productname1 = x.child("productname").getValue().toString()
+                    description1 = x.child("description").getValue().toString()
+                    image1 = x.child("image").getValue().toString()
+                    price1 = x.child("price").getValue().toString()
+                    category1 = x.child("category").getValue().toString()
+                    cid1 = x.child("cid").getValue().toString()
+                    qu1 = x.child("qu").getValue().toString()
+                    lessprice1 = x.child("lessprice").getValue().toString()
+                    offer1 = x.child("offer").getValue().toString()
+                    rate1 = x.child("rate").getValue().toString()
+                    review1 = x.child("review").getValue().toString()
 
 
                     // Price Counter
-                    minteger = (price.toInt() * qu.toInt()) + minteger
+                    minteger = (price1!!.toInt() * qu1!!.toInt()) + minteger
 
 
                     /*Toast.makeText(this@CartActivity, "${minteger}", Toast.LENGTH_SHORT).show()*/
@@ -93,21 +110,21 @@ class CartActivity : AppCompatActivity() {
                     var key = x.key.toString()
                     var dbcart =
                         DBCartProduct(
-                            productname,
-                            description,
-                            image,
-                            price,
+                            productname1!!,
+                            description1!!,
+                            image1!!,
+                            price1!!,
                             key,
-                            category,
-                            cid,
-                            qu, lessprice, offer, rate, review
+                            category1!!,
+                            cid1!!,
+                            qu1!!, lessprice1!!, offer1!!, rate1!!, review1!!
                         )
 
 
-                    list.add(dbcart)
+                    cartlist.add(dbcart)
 
                 }
-                RvSetup(list)
+                RvSetup(cartlist)
 
 
             }
@@ -123,7 +140,7 @@ class CartActivity : AppCompatActivity() {
 
     private fun Bottom(minteger: Int) {
 
-        var bottomdialog = BottomSheetDialog(this)
+        bottomdialog = BottomSheetDialog(this)
 
         var view = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
 
@@ -137,6 +154,8 @@ class CartActivity : AppCompatActivity() {
 
             bottomdialog.dismiss()
         }
+
+
 
 
         btnClose.setOnClickListener {
@@ -208,22 +227,22 @@ class CartActivity : AppCompatActivity() {
 
     }
 
-    private fun AddressRead() {
+    private fun readAddress() {
 
         var firebaseDatabase = FirebaseDatabase.getInstance()
-        var ref = firebaseDatabase.reference
+        var databaseReference = firebaseDatabase.reference
 
         var firebaseAuth = FirebaseAuth.getInstance()
         var user = firebaseAuth.currentUser
-        var uid = user?.uid
+        var uid = user?.uid.toString()
 
-
-        ref.child("Address").child(uid.toString())
+        databaseReference.child("Address").child(uid)
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     UserAddress.clear()
 
                     for (x in snapshot.children) {
+
                         var name = x.child("name").getValue().toString()
                         var mobile = x.child("mobile").getValue().toString()
                         var flatno = x.child("flatno").getValue().toString()
@@ -232,27 +251,28 @@ class CartActivity : AppCompatActivity() {
                         var city = x.child("city").getValue().toString()
                         var pincode = x.child("pincode").getValue().toString()
                         var location = x.child("location").getValue().toString()
-                        var key = x.key.toString()
 
-                        var DBAddress =
-                            AddressInsert(
-                                name, mobile, flatno, landmark, state, city, pincode, location
-                            )
+                        var address = AddressInsert(
+                            name,
+                            mobile,
+                            flatno,
+                            landmark,
+                            state,
+                            city,
+                            pincode,
+                            location
+                        )
 
-
-                        UserAddress.add(DBAddress)
+                        UserAddress.add(address)
 
                     }
-
 
                 }
 
                 override fun onCancelled(error: DatabaseError) {
-
+                    TODO("Not yet implemented")
                 }
             })
-
-
     }
 
 
