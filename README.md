@@ -37,35 +37,24 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 
 <p float="center">
   
-<img src="https://user-images.githubusercontent.com/101545076/191200558-673979e7-9a4b-4dab-b8b1-9da24b37bcbe.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412103-202a85a5-1afc-4b09-abfc-db93ba24f50e.png" width=22% height=35%>
 
-<img src="https://user-images.githubusercontent.com/101545076/191200740-89f3c77d-cbb5-4d04-8d8d-bacd58103e4f.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191411935-8bba003f-42a1-4866-86f5-b17170aae305.png" width=22% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101545076/191201013-965e7cb5-8766-4261-a44a-8e622a81ab83.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412182-90835b51-54ab-4dac-b424-59c16dec87c1.png" width=22% height=35%>
 
-<img src="https://user-images.githubusercontent.com/101545076/191200806-7cdf2766-29f0-4d36-be8a-e85cd3cc3e80.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412223-af9c1128-5ff7-48d3-9afc-99dea5eb5248.png" width=22% height=35%>
 
-<img src="https://user-images.githubusercontent.com/101545076/191200956-ee15f0c6-8a55-4fca-9991-fe09ebe1089a.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412391-2ea9bead-d800-44bd-9a6c-d989ca5e3f76.png" width=22% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101545076/191203209-255692cd-fb16-43eb-a732-21f07f5d298d.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412459-4ebf068d-9e76-4d81-a090-1f721ae255c2.png" width=22% height=35%>
   
-<img src="https://user-images.githubusercontent.com/101545076/191203223-75685d8c-7aa1-4781-a797-a119e7bef25e.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412510-e2283f4e-a2a6-4b3a-9517-b4a0dda96551.png" width=22% height=35%>
 
 </p>
 
-### Admin Panel Screenshots
 
-<p float="center">
-  
-<img src="https://user-images.githubusercontent.com/101545076/191251520-17062c88-3b1f-4c82-989c-3b5018b26999.png" width=22% height=35%>
 
-<img src="https://user-images.githubusercontent.com/101545076/191251545-51e23223-c871-465d-9d8b-f6079729bb67.png" width=22% height=35%>
-
-<img src="https://user-images.githubusercontent.com/101545076/191251571-ca64802d-a408-45ee-8afc-ec64ab61d934.png" width=22% height=35%>
-
-<img src="https://user-images.githubusercontent.com/101545076/191251597-4a0d8bdb-c12d-4938-8c7b-a55a260d3aff.png" width=22% height=35%>
-
-</p>
 ## Laungage, Libraries and tools 🛠
 
 News App uses libraries and tools used to build Modern Android application, mainly part of Android Jetpack 🚀
