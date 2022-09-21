@@ -42,6 +42,8 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 <img src="https://user-images.githubusercontent.com/101611806/191411935-8bba003f-42a1-4866-86f5-b17170aae305.png" width=22% height=35%>
   
 <img src="https://user-images.githubusercontent.com/101611806/191412182-90835b51-54ab-4dac-b424-59c16dec87c1.png" width=22% height=35%>
+   
+ <img src="https://user-images.githubusercontent.com/101611806/191413122-0fd7e81c-66a5-4ecf-ba7a-ddfb2b1519fd.png" width=22% height=35%>
 
 <img src="https://user-images.githubusercontent.com/101611806/191412223-af9c1128-5ff7-48d3-9afc-99dea5eb5248.png" width=22% height=35%>
 
@@ -53,15 +55,11 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
   
 <img src="https://user-images.githubusercontent.com/101611806/191412755-7eb683dd-4908-4d19-a295-76c9a6e57321.png" width=22% height=35%>
  
- <img src="https://user-images.githubusercontent.com/101611806/191412817-975a567d-e558-4a9d-b536-460d6ecd8d85.png" width=22% height=35%>
+<img src="https://user-images.githubusercontent.com/101611806/191412817-975a567d-e558-4a9d-b536-460d6ecd8d85.png" width=22% height=35%>
    
- <img src="https://user-images.githubusercontent.com/101611806/191412817-975a567d-e558-4a9d-b536-460d6ecd8d85.png" width=22% height=35%>
-  
  <img src="https://user-images.githubusercontent.com/101611806/191412876-820e2f69-033a-473f-8a2a-8db4e7a2082a.png" width=22% height=35%>
 
 </p>
-
-
 
 
 ## Laungage, Libraries and tools 🛠
