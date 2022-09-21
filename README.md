@@ -61,8 +61,6 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 
 </p>
 
-![Screenshot_2022-09-21-01-22-32-80_d13ce2509766109415832f1c757c5d42_google-pixel4xl-justblack-portrait](https://user-images.githubusercontent.com/101611806/191412876-820e2f69-033a-473f-8a2a-8db4e7a2082a.png)
-
 
 
 
