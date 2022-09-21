@@ -50,8 +50,19 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 <img src="https://user-images.githubusercontent.com/101611806/191412459-4ebf068d-9e76-4d81-a090-1f721ae255c2.png" width=22% height=35%>
   
 <img src="https://user-images.githubusercontent.com/101611806/191412510-e2283f4e-a2a6-4b3a-9517-b4a0dda96551.png" width=22% height=35%>
+  
+<img src="https://user-images.githubusercontent.com/101611806/191412755-7eb683dd-4908-4d19-a295-76c9a6e57321.png" width=22% height=35%>
+ 
+ <img src="https://user-images.githubusercontent.com/101611806/191412817-975a567d-e558-4a9d-b536-460d6ecd8d85.png" width=22% height=35%>
+   
+ <img src="https://user-images.githubusercontent.com/101611806/191412817-975a567d-e558-4a9d-b536-460d6ecd8d85.png" width=22% height=35%>
+  
+ <img src="https://user-images.githubusercontent.com/101611806/191412876-820e2f69-033a-473f-8a2a-8db4e7a2082a.png" width=22% height=35%>
 
 </p>
+
+![Screenshot_2022-09-21-01-22-32-80_d13ce2509766109415832f1c757c5d42_google-pixel4xl-justblack-portrait](https://user-images.githubusercontent.com/101611806/191412876-820e2f69-033a-473f-8a2a-8db4e7a2082a.png)
+
 
 
 
