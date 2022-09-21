@@ -21,7 +21,7 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 
 ## Developer
 
-- [@pradyuman001](https://github.com/pradyuman001)
+- [@Durgesh005](https://github.com/Durgesh005)
 
 
 ## Features
