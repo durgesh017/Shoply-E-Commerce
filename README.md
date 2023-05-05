@@ -73,8 +73,7 @@ News App uses libraries and tools used to build Modern Android application, main
 
 ## Feedback
 
-If you have any feedback, please reach out to us at pradyumangodhani007@gmail.com
-
+If you have any feedback, please reach out to us at durgeshmishra6099@gmail.com
 ## 🛠 Skills
 
 C Language, C++ , Core JAVA, Kotlin, Android 
