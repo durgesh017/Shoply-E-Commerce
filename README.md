@@ -1,37 +1,60 @@
-# Shoply-E-Commerce App
-E commerce Shopping Application is made using Firebase Realtime Database and Firebase Storage. I used Firebase Realtime Database for CRUD Operation. I used Firebase Storage for Image Storage. So E commerce Shopping Application was made using Kotlin and Firebase.
+# Shoply Mobile App
+Shoply is an e-commerce shopping application built using Kotlin and Firebase, leveraging Firebase Realtime Database for CRUD operations and Firebase Storage for image storage. The app is structured to prioritize scalability, clean code, and a seamless user experience.
 
-The codebase focuses 👓 on following key things:
+# Key Highlights
 
-Code structuring, style and comments
-Dependency injection
-Offline first ✈️
-Kotlin
-And tests 🛠
-Emojis (ofcourse) 😛
+Code Structuring, Style, and Comments
 
-### Details
-There are two panel in this Application User Panel and Admin Panel. 
+Dependency Injection
+
+Offline-First Approach ✈️
+
+Kotlin-Powered
+
+Comprehensive Testing 🛠
+
+Emojis for Fun 😛
+
+### Application Details
+The application comprises two main panels:
 
 ##### Admin Panel
-In Admin Panle Admin can INSERT, UPDATE, DELETE product. Admin can insert various product in differnt types of category.
+The Admin Panel allows the administrator to:
+
+INSERT, UPDATE, and DELETE products.
+
+Add products to various categories.
 
 ##### User Panel
-In User Panel user can see all the product that are Inserted by Admin. User can also add Product to wishlist or also can add in Cart. User can Place order on his perticular Address.
+The User Panel enables users to:
 
-## Developer
+- Browse products added by the admin.
 
-- [@Durgesh005](https://github.com/Durgesh005)
+- Add products to a wishlist.
 
+- Add products to the cart.
+
+- Place orders by providing a specific delivery address.
 
 ## Features
 
-- Add to cart
+Add products to the cart.
 
-- Wishlist your favorite product
+Wishlist favorite products.
 
-- Simple User Experience
+Intuitive and simple user experience.
 
+### Technologies and Tools Used
+
+Shoply incorporates modern libraries and tools, primarily from the Android Jetpack suite, to build a robust and efficient application. Key technologies include:
+
+1. Kotlin
+
+2. Rest API
+
+3. Retrofit
+
+4. Android Jetpack Components
 
 ### User Side Screenshots
 
@@ -62,19 +85,15 @@ In User Panel user can see all the product that are Inserted by Admin. User can 
 </p>
 
 
-## Laungage, Libraries and tools 🛠
+## Skills
 
-News App uses libraries and tools used to build Modern Android application, mainly part of Android Jetpack 🚀
+- Programming Languages: C, C++, Core Java, Kotlin
 
-1. Kotlin
-2. Rest API
-3. Retrofit
-4. Other Android Jetpack components
+- Mobile Development: Android
 
-## Feedback
+## Developer
 
-If you have any feedback, please reach out to us at durgeshmishra6099@gmail.com
-## 🛠 Skills
+- [@Durgesh005](https://github.com/Durgesh005)
 
 C Language, C++ , Core JAVA, Kotlin, Android 
 
