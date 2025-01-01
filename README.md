@@ -35,11 +35,11 @@ Shoply is an e-commerce shopping application built using Kotlin and Firebase, le
 
 ## Features
 
-Add products to the cart.
+- Add products to the cart.
 
-Wishlist favorite products.
+- Wishlist favorite products.
 
-Intuitive and simple user experience.
+- Intuitive and simple user experience.
 
 ### Technologies and Tools Used
 
@@ -91,9 +91,6 @@ Shoply incorporates modern libraries and tools, primarily from the Android Jetpa
 ## Developer
 
 - [@Durgesh005](https://github.com/Durgesh005)
-
-C Language, C++ , Core JAVA, Kotlin, Android 
-
 
 ## Support
 
