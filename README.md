@@ -13,18 +13,17 @@ Shoply is an e-commerce shopping application built using Kotlin and Firebase, le
 
 - Comprehensive Testing 🛠
 
-### Application Details
-The application comprises two main panels:
+# Application Details
 
 ##### Admin Panel
-The Admin Panel allows the administrator to:
+- The Admin Panel allows the administrator to:
 
-INSERT, UPDATE, and DELETE products.
+- INSERT, UPDATE, and DELETE products.
 
-Add products to various categories.
+- Add products to various categories.
 
 ##### User Panel
-The User Panel enables users to:
+- The User Panel enables users to:
 
 - Browse products added by the admin.
 
