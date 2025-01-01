@@ -90,7 +90,7 @@ Shoply incorporates modern libraries and tools, primarily from the Android Jetpa
 
 ## Developer
 
-- [@Durgesh005](https://github.com/Durgesh017)
+- [@durgesh017](https://github.com/durgesh017)
 
 ## Support
 
