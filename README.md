@@ -41,7 +41,7 @@ Shoply is an e-commerce shopping application built using Kotlin and Firebase, le
 
 - Intuitive and simple user experience.
 
-### Technologies and Tools Used
+# Technologies and Tools Used
 
 Shoply incorporates modern libraries and tools, primarily from the Android Jetpack suite, to build a robust and efficient application. Key technologies include:
 
@@ -90,7 +90,7 @@ Shoply incorporates modern libraries and tools, primarily from the Android Jetpa
 
 ## Developer
 
-- [@Durgesh005](https://github.com/Durgesh005)
+- [@Durgesh005](https://github.com/Durgesh017)
 
 ## Support
 
