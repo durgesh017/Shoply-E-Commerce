@@ -3,17 +3,15 @@ Shoply is an e-commerce shopping application built using Kotlin and Firebase, le
 
 # Key Highlights
 
-Code Structuring, Style, and Comments
+- Code Structuring, Style, and Comments
 
-Dependency Injection
+- Dependency Injection
 
-Offline-First Approach ✈️
+- Offline-First Approach ✈️
 
-Kotlin-Powered
+- Kotlin-Powered
 
-Comprehensive Testing 🛠
-
-Emojis for Fun 😛
+- Comprehensive Testing 🛠
 
 ### Application Details
 The application comprises two main panels:
