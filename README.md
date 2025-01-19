@@ -1,5 +1,5 @@
 # Shoply Mobile App
-Shoply is an e-commerce shopping application built using Kotlin and Firebase, leveraging Firebase Realtime Database for CRUD operations and Firebase Storage for image storage. The app is structured to prioritize scalability, clean code, and a seamless user experience...
+Shoply is an e-commerce shopping application built using Kotlin and Firebase, leveraging Firebase Realtime Database for CRUD operations and Firebase Storage for image storage. The app is structured to prioritize scalability, clean code, and a seamless user experience.
 # Key Highlights
 
 - Code Structuring, Style, and Comments
